@@ -10,6 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
+            //on the source code he has net5.0
             "program": "${workspaceFolder}/API/bin/Debug/net6.0/API.dll",
             "args": [],
             "cwd": "${workspaceFolder}/API",
@@ -30,6 +31,7 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
+          //  "processId": "${command:pickProcess}"
         }
     ]
 }

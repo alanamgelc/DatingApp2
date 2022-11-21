@@ -4,7 +4,7 @@
 
 namespace API.Data.Migrations
 {
-    /// <inheritdoc />
+   // /// <inheritdoc />
     public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
@@ -24,7 +24,7 @@ namespace API.Data.Migrations
                 });
         }
 
-        /// <inheritdoc />
+       // /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

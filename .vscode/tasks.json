@@ -32,8 +32,10 @@
             "args": [
                 "watch",
                 "run",
-                "--project",
-                "${workspaceFolder}/API/API.csproj"
+                "${workspaceFolder}/API/API.csproj",
+              //  "--project",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         }
