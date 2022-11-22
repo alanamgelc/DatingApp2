@@ -17,13 +17,13 @@ export class AppComponent implements OnInit  {
   users: any;
 
  // constructor(private http: HttpClient){}
-constructor (private http: HttpClient, private accountService: AccountService){}
+constructor ( private accountService: AccountService){}
 
   ngOnInit(){
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
    
-    this.getUsers();
+  //  this.getUsers();
     this.setCurrentUser();
   }
 
@@ -31,22 +31,11 @@ constructor (private http: HttpClient, private accountService: AccountService){}
     const user: User =JSON.parse(localStorage.getItem('user'));
     this.accountService.setCurrentUser(user);
   }
-  
-  getUsers(){
-    this.http.get('https://localhost:5001/api/users')
-    .subscribe({
-      next: response => this.users=response,
-      error: error => console.log(error),
-      complete: () => console.log('complete') //optional
-      
-      
-    })
-  }
-  
+
+ // getUsers() {this.http.get('https://localhost:5001/api/users')
+    // .subscribe({ next: response => this.users = response, error: error => console.log(error), complete: () => console.log('complete') //optional })}}
 
 }
-
-
   
 
   
